@@ -27,7 +27,7 @@ A kérdéseknél:
 
 ### 2. Queues hozzáadása a standalone-full.xml-hez
 
-A `WILDFLY_HOME/standalone/configuration/standalone-full.xml` fájlban keresd meg a `<jms-destinations>` részt és add hozzá:
+A `WILDFLY_HOME/standalone/configuration/standalone-full.xml` fájlban meg kell keresni a `<jms-destinations>` részt és hozzáadni:
 
 ```xml
 <jms-queue name="colorQueue" entries="java:/queue/colorQueue java:jboss/exported/jms/queue/colorQueue"/>
